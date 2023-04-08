@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="png" href="img/icon.png">
+</head>
+
+<body>
+    <header class="py-2 px-2">
+        <div class="flex justify-between items-center">
+            <div class="justify-between flex items-center">
+                <img src="img/icon.png" alt="Logo" class="w-10">
+                <p class="uppercase text-xl ml-2 font-medium">Freelancer site</p>
+            </div>
+        </div>
+
+        <div
+            class="mt-2 text-lg font-medium flex flex-col items-center px-2 py-2 bg-gray-100 border-gray-900 rounded-t-lg md:flex-row">
+            <p class="py-2 rounded-md w-full text-center hover:bg-blue-700 hover:text-white cursor-pointer">Inicio</p>
+            <p class="py-2 rounded-md w-full text-center hover:bg-blue-700 hover:text-white cursor-pointer">Nosotros</p>
+            <p class="py-2 rounded-md w-full text-center hover:bg-blue-700 hover:text-white cursor-pointer">Clientes</p>
+            <p class="py-2 rounded-md w-full text-center hover:bg-blue-700 hover:text-white cursor-pointer">Contactos
+            </p>
+        </div>
+
+        <div
+            class="bg-[url('/img/pattern.jpg')] bg-no-repeat bg-cover bg-center flex flex-col justify-center items-center h-80 md:h-96">
+            <p class="text-white font-medium text-4xl">Desarrollo Web Freelancer</p>
+            <button
+                class="mt-10 w-40 text-white text-xl bg-blue-700 px-4 py-2 rounded-md font-medium hover:bg-blue-600">Contactar</button>
+        </div>
+    </header>
+
+    <main class="mt-4 py-2 px-2">
+        <div>
+            <h2 class="text-center text-4xl font-medium uppercase">Mis Servicios</h2>
+
+            <div class="services flex flex-col items-center md:flex-row md:gap-x-4">
+
+                <div class="w-5/6 sm:w-2/3 mt-8 border px-3 py-3 bg-gray-50 rounded-md md:w-1/3">
+                    <p class="text-center text-sky-600 font-medium text-xl mb-3">Diseño Web</p>
+                    <img src="img/web_design.png" alt="Web" class="w-56 mx-auto">
+                    <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore, a
+                        adipisci consequatur
+                        eius voluptates nobis aliquid perspiciatis voluptate, fugit ipsam repellat officia similique, ut
+                        corporis. Doloremque quam esse hic.</p>
+                </div>
+
+                <div class="w-5/6 sm:w-2/3 mt-8 border px-3 py-3 bg-gray-50 rounded-md md:w-1/3">
+                    <p class="text-center text-sky-600 font-medium text-xl mb-3">Diseño Mobile</p>
+                    <img src="img/mobile_mobile.png" alt="Web" class="w-56 mx-auto">
+                    <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore, a
+                        adipisci consequatur
+                        eius voluptates nobis aliquid perspiciatis voluptate, fugit ipsam repellat officia similique, ut
+                        corporis. Doloremque quam esse hic.</p>
+                </div>
+
+                <div class="w-5/6 sm:w-2/3 mt-8 border px-3 py-3 bg-gray-50 rounded-md md:w-1/3">
+                    <p class="text-center text-sky-600 font-medium text-xl mb-3">E-commerce</p>
+                    <img src="img/ecommerce_design.jpg" alt="Web" class="w-56 mx-auto">
+                    <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore, a
+                        adipisci consequatur
+                        eius voluptates nobis aliquid perspiciatis voluptate, fugit ipsam repellat officia similique, ut
+                        corporis. Doloremque quam esse hic.</p>
+                </div>
+            </div>
+
+            <div class="contact">
+                <h2 class="mt-8 text-4xl font-medium text-center">Contacto</h2>
+                <form class="mx-auto mt-4 max-w-xl sm:mt-20">
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                        <div class="sm:col-span-2">
+                            <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">Nombres
+                                <div class="mt-2.5">
+                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                                        class="block w-full rounded-md border-0 outline-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6">
+                                </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+                            <div class="mt-2.5">
+                                <input type="email" name="email" id="email" autocomplete="email"
+                                    class="block w-full rounded-md border-0 outline-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="message"
+                                class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+                            <div class="mt-2.5">
+                                <textarea name="message" id="message" rows="4"
+                                    class="block w-full rounded-md border-0 outline-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <button type="submit"
+                            class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-100 rounded-lg shadow m-4 py-6">
+        <span class="block text-lg text-gray-500 sm:text-center">©2023 <a href="https://flowbite.com/"
+                class="hover:underline">Imer Gonzalez</a>. Derechos Reservados.</span>
+    </footer>
+</body>
+
+</html>
